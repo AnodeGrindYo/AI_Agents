@@ -1,6 +1,7 @@
 import logging
 from src.logger import logger
 from src.config import get_config
+from src.pipelines.pipeline_basique import conversation
 
 def initialize_agents():
     """ Initialisation des agents IA (à implémenter plus tard). """
@@ -15,10 +16,14 @@ def initialize_tools():
     pass
 
 def initialize_pipelines():
-    """ Initialisation des pipelines IA (à implémenter plus tard). """
+    """ Initialisation des pipelines IA. """
     logger.info("🔗 Initialisation des pipelines...")
-    # TODO: Charger et initialiser les workflows IA
-    pass
+    try:
+        logger.info("🧠 Test du pipeline LangChain...")
+        response = conversation.predict(input="Bonjour, qui es-tu ?")
+        logger.info(f"💬 Réponse du LLM: {response}")
+    except Exception as e:
+        logger.error(f"❌ Erreur lors de l'initialisation du pipeline : {e}")
 
 def main():
     logger.info("🔹 Démarrage du projet LangChain & CrewAI")
