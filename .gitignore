@@ -1,0 +1,41 @@
+progression_OLD.md
+guide.md
+progression.md
+
+# === Windows Specific ===
+Thumbs.db
+.DS_Store
+
+# === Python ===
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+
+# === Virtual Environment ===
+venv/
+
+# === VS Code ===
+.vscode/
+*.code-workspace
+
+# === Logs and temp files ===
+*.log
+logs/
+debug.log
+*.tmp
+
+# === Python environment files ===
+.env
+.env.local
+*.ini
+
+# === Pytest ===
+.cache/
+.tox/
+
+# === Jupyter Notebook ===
+.ipynb_checkpoints/
+
+# === macOS ===
+*.DS_Store
