@@ -1,0 +1,15 @@
+# LangChain et CrewAI
+langchain
+crewai
+
+# LLMs Open-Source compatibles
+transformers
+sentence-transformers
+torch
+faiss-cpu  # Pour le stockage vectoriel
+
+# Outils complémentaires
+pydantic  # Gestion des modèles de données
+python-dotenv  # Gestion des variables d’environnement
+tqdm  # Barre de progression pour les tâches asynchrones
+loguru  # Logging avancé
